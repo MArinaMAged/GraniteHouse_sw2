@@ -8,6 +8,7 @@ using GraniteHouse_sw2.Models;
 
 namespace GraniteHouse_sw2.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         public IActionResult Index()
