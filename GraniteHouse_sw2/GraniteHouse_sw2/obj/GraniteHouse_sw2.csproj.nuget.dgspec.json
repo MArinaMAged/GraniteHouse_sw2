@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maria Majid\\Desktop\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj": {}
+    "C:\\Users\\Kiro Abadier\\Documents\\GitHub\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maria Majid\\Desktop\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj": {
+    "C:\\Users\\Kiro Abadier\\Documents\\GitHub\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria Majid\\Desktop\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj",
+        "projectUniqueName": "C:\\Users\\Kiro Abadier\\Documents\\GitHub\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj",
         "projectName": "GraniteHouse_sw2",
-        "projectPath": "C:\\Users\\Maria Majid\\Desktop\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj",
-        "packagesPath": "C:\\Users\\Maria Majid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria Majid\\Desktop\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\obj\\",
+        "projectPath": "C:\\Users\\Kiro Abadier\\Documents\\GitHub\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj",
+        "packagesPath": "C:\\Users\\Kiro Abadier\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kiro Abadier\\Documents\\GitHub\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Maria Majid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kiro Abadier\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +70,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
