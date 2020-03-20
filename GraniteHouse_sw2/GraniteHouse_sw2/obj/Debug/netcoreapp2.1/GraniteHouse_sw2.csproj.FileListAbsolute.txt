@@ -58,6 +58,9 @@ C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\Granite
 C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.TagHelpers.output.cache
 C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.RazorCoreGenerate.cache
 C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductTypes\Create.cshtml.g.cs
+C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductTypes\Delete.cshtml.g.cs
+C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductTypes\Details.cshtml.g.cs
+C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductTypes\Edit.cshtml.g.cs
 C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ProductTypes\Index.cshtml.g.cs
 C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
