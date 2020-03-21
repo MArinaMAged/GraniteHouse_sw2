@@ -133,3 +133,9 @@ C:\Users\Maria Majid\Desktop\github\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHou
 C:\Users\Maria Majid\Desktop\github\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.dll
 C:\Users\Maria Majid\Desktop\github\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.pdb
 C:\Users\Maria Majid\Desktop\github\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.csproj.CopyComplete
+C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.csprojAssemblyReference.cache
+C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\SpecialTags\Create.cshtml.g.cs
+C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\SpecialTags\Index.cshtml.g.cs
+C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\SpecialTags\Edit.cshtml.g.cs
+C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\SpecialTags\Details.cshtml.g.cs
+C:\Users\Kiro Abadier\Documents\GitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\SpecialTags\Delete.cshtml.g.cs
