@@ -4,14 +4,14 @@
 
 @inject IHttpContextAccessor HttpContextAccessor
 
-
 <br />
-<h2 class="text-info">  Product  Details </h2>
+<h2 class="text-info"> Product Details </h2>
 
 <form method="post">
+    <!-- enctype="multipart/form-data" asp-action="Edit" when uploading image -->
     <div class="p-4 border rounded row">
 
-
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="col-8">
             <div class="form-group row">
                 <div class="col-4">
@@ -22,8 +22,6 @@
                 </div>
 
             </div>
-
-
             <div class="form-group row">
                 <div class="col-4">
                     <label asp-for="ShadeColor"></label>
@@ -33,8 +31,6 @@
                 </div>
 
             </div>
-
-
             <div class="form-group row">
                 <div class="col-4">
                     <label asp-for="Price"></label>
@@ -54,10 +50,8 @@
                 </div>
 
             </div>
-
             @if (!Model.SpecialTags.Name.Equals("--None--"))
             {
-
 
                 <div class="form-group row">
                     <div class="col-4">
@@ -69,40 +63,48 @@
 
                 </div>
             }
-
-
             <div class="form-group row">
                 <div class="col-4">
 
                 </div>
-                
+                <div class="col-8">
+                    @{
+                        bool isInBag = false;
+                        List<int> lstCart = HttpContextAccessor.HttpContext.Session.Get<List<int>>("ssShoppingCart");
+                        if (lstCart != null && lstCart.Contains(Model.Id))
+                        {
+                            isInBag = true;
+                        }
+                    }
 
-                   
+                    @if (isInBag)
+                    {
+                        <button type="submit" value="Remove from Bag" asp-action="remove" asp-route-id="@Model.Id" class="btn btn-danger form-control"> Remove from Bag </button>
+                    }
+                    else
+                    {
+                        <button type="submit" value="Add to Bag" asp-route-id="@Model.Id" class="btn btn-primary form-control"> Add to Bag </button>
+                    }
 
-                        <button type="submit" value="Add To Bag" asp-route-id="@Model.Id" class="btn btn-primary form-control">Add To Back </button>
-                    
                 </div>
-
-            </div>
-
-
-            <div class="col-1">
-
-            </div>
-            <div class="col-3">
-                <img src="@Model.Image" width="100%" style="border-radius:5px; border:1px solid #bbb9b9;" />
-                <br />
-                <br />
-                @if (Model.Available)
-                {
-                    <img src="~/images/InStock.jfif" width="50%" />
-                }
-            </div>
-
-            <br />
-            <div class="form-group">
-                <input hidden asp-for="Id" />
-                <a asp-action="Index" class="btn btn-success"> Back to list</a>
             </div>
         </div>
+        <div class="col-1">
+
+        </div>
+        <div class="col-3">
+            <img src="@Model.Image" width="100%" style="border-radius:5px; border:1px solid #bbb9b9;" />
+            <br /><br />
+            @if (Model.Available)
+            {
+                <img src="~/images/inStock.jpg" width="50%" />
+            }
+        </div>
+
+        <br />
+        <div class="form-group">
+            <input hidden asp-for="Id" />
+            <a asp-action="Index" class="btn btn-success"> Back to list</a>
+        </div>
+    </div>
 </form>
