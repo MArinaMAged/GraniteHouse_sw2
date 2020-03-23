@@ -40,13 +40,11 @@ namespace GraniteHouse_sw2.Data.Migrations
 
                     b.Property<int>("SpecialTagId");
 
-                    b.Property<int?>("SpecialTagsId");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ProductTypeId");
 
-                    b.HasIndex("SpecialTagsId");
+                    b.HasIndex("SpecialTagId");
 
                     b.ToTable("Products");
                 });
@@ -253,7 +251,8 @@ namespace GraniteHouse_sw2.Data.Migrations
 
                     b.HasOne("GraniteHouse_sw2.Models.SpecialTags", "SpecialTags")
                         .WithMany()
-                        .HasForeignKey("SpecialTagsId");
+                        .HasForeignKey("SpecialTagId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

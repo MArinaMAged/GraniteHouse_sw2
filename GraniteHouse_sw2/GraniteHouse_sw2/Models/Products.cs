@@ -17,6 +17,7 @@ namespace GraniteHouse_sw2.Models
         public bool Available { get; set; }
         public string Image { get; set; }
         public string ShadeColor { get; set; }
+
         [Display(Name = "Product Type")]
         public int ProductTypeId { get; set; }
 
@@ -26,7 +27,7 @@ namespace GraniteHouse_sw2.Models
         [Display(Name = "Special Tag ")]
         public int SpecialTagId { get; set; }
 
-        [ForeignKey("SpecialTagsId")]
+        [ForeignKey("SpecialTagId")]
         public virtual SpecialTags SpecialTags { get; set; }
     }
 }
