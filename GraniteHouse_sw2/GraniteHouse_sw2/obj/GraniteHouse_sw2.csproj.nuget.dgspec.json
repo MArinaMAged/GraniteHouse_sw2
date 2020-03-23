@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maria Majid\\Desktop\\mirette-github\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj": {}
+    "C:\\Users\\Maria Majid\\Desktop\\MarinaNoga-github\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maria Majid\\Desktop\\mirette-github\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj": {
+    "C:\\Users\\Maria Majid\\Desktop\\MarinaNoga-github\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria Majid\\Desktop\\mirette-github\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj",
+        "projectUniqueName": "C:\\Users\\Maria Majid\\Desktop\\MarinaNoga-github\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj",
         "projectName": "GraniteHouse_sw2",
-        "projectPath": "C:\\Users\\Maria Majid\\Desktop\\mirette-github\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj",
+        "projectPath": "C:\\Users\\Maria Majid\\Desktop\\MarinaNoga-github\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2.csproj",
         "packagesPath": "C:\\Users\\Maria Majid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria Majid\\Desktop\\mirette-github\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\obj\\",
+        "outputPath": "C:\\Users\\Maria Majid\\Desktop\\MarinaNoga-github\\GraniteHouse_sw2\\GraniteHouse_sw2\\GraniteHouse_sw2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Maria Majid\\AppData\\Roaming\\NuGet\\NuGet.Config",
