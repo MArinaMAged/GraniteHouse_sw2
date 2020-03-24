@@ -19,6 +19,27 @@ namespace GraniteHouse_sw2.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("GraniteHouse_sw2.Models.Appointments", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("AppointmentDate");
+
+                    b.Property<string>("CustomerEmail");
+
+                    b.Property<string>("CustomerName");
+
+                    b.Property<string>("CustomerPhoneNumber");
+
+                    b.Property<bool>("isConfirmed");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Appointments");
+                });
+
             modelBuilder.Entity("GraniteHouse_sw2.Models.Products", b =>
                 {
                     b.Property<int>("Id")
@@ -47,6 +68,25 @@ namespace GraniteHouse_sw2.Data.Migrations
                     b.HasIndex("SpecialTagId");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("GraniteHouse_sw2.Models.ProductsSelectedForAppointment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AppointmentId");
+
+                    b.Property<int>("ProductId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppointmentId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductsSelectedForAppointment");
                 });
 
             modelBuilder.Entity("GraniteHouse_sw2.Models.ProductTypes", b =>
@@ -252,6 +292,19 @@ namespace GraniteHouse_sw2.Data.Migrations
                     b.HasOne("GraniteHouse_sw2.Models.SpecialTags", "SpecialTags")
                         .WithMany()
                         .HasForeignKey("SpecialTagId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("GraniteHouse_sw2.Models.ProductsSelectedForAppointment", b =>
+                {
+                    b.HasOne("GraniteHouse_sw2.Models.Appointments", "Appointments")
+                        .WithMany()
+                        .HasForeignKey("AppointmentId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("GraniteHouse_sw2.Models.Products", "Products")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
