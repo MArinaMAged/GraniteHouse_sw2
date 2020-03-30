@@ -9,5 +9,9 @@ namespace GraniteHouse_sw2.Utility
     {
         public const string DefaultProductImage = "default_image.jfif";
         public const string ImageFolder = @"images\ProductImage";
+
+        public const string AdminEndUser = "Admin";
+        public const string SuperAdminEndUser = "Super Admin";
+    
     }
 }
