@@ -4,10 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using GraniteHouse_sw2.Data;
 using GraniteHouse_sw2.Models;
+using GraniteHouse_sw2.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GraniteHouse_sw2.Areas.Admin.Controllers
 {
+    [Authorize(Roles = SD.SuperAdminEndUser)]
     [Area("Admin")]
     public class AdminUsersController : Controller
     {
@@ -67,5 +70,38 @@ namespace GraniteHouse_sw2.Areas.Admin.Controllers
             return View(applicationUser);
 
         }
+
+
+
+        //Get Delete
+        public async Task<IActionResult> Delete(string id)
+        {
+            if (id == null || id.Trim().Length == 0)
+                return NotFound();
+
+            var userFromDb = await _db.ApplicationUser.FindAsync(id);
+            if (userFromDb == null)
+                return NotFound();
+            return View(userFromDb);
+        }
+
+        //Post Delete 
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeletePost(string id)
+        {
+
+
+
+            ApplicationUser userFromDb = _db.ApplicationUser.Where(u => u.Id == id).FirstOrDefault();
+            userFromDb.LockoutEnd = DateTime.Now.AddYears(1000);
+
+
+            _db.SaveChanges();
+            return RedirectToAction(nameof(Index));
+
+
+        }
+
     }
 }

@@ -29,16 +29,34 @@ namespace GraniteHouse_sw2.Areas.Customer.Controllers
         }
 
         // get index Shopping Cart
-        public async Task<IActionResult> Index()
+        /* public async Task<IActionResult> Index()
+         {
+             List<int> lstShoppingCart = HttpContext.Session.Get<List<int>>("ssShoppingCart");
+
+             if (lstShoppingCart.Count > 0)
+             {
+                 foreach (int cartItem in lstShoppingCart)
+                 {
+                     Products prod = _db.Products.Include(p => p.SpecialTags).Include(p => p.ProductTypes).Where(p => p.Id == cartItem).FirstOrDefault();
+                     ShoppingCartVM.Products.Add(prod); 
+                 }
+             }
+             return View(ShoppingCartVM);
+         }*/
+
+
+        public IActionResult Index()
         {
             List<int> lstShoppingCart = HttpContext.Session.Get<List<int>>("ssShoppingCart");
-
-            if (lstShoppingCart.Count > 0)
+            if (lstShoppingCart != null && lstShoppingCart.Count > 0)
             {
                 foreach (int cartItem in lstShoppingCart)
                 {
-                    Products prod = _db.Products.Include(p => p.SpecialTags).Include(p => p.ProductTypes).Where(p => p.Id == cartItem).FirstOrDefault();
-                    ShoppingCartVM.Products.Add(prod);
+                    Products products = _db.Products
+                        .Include(p => p.SpecialTags)
+                        .Include(p => p.ProductTypes)
+                        .Where(p => p.Id == cartItem).FirstOrDefault();
+                    ShoppingCartVM.Products.Add(products);
                 }
             }
             return View(ShoppingCartVM);

@@ -4,10 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using GraniteHouse_sw2.Data;
 using GraniteHouse_sw2.Models;
+using GraniteHouse_sw2.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GraniteHouse_sw2.Areas.Admin.Controllers
 {
+    [Authorize(Roles = SD.SuperAdminEndUser)] 
     [Area("Admin")]
     public class SpecialTagsController : Controller
     {
