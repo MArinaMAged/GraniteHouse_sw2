@@ -465,3 +465,6 @@ C:\Users\Maria Majid\Desktop\gitsw2mirettezfta\GraniteHouse_sw2\GraniteHouse_sw2
 C:\Users\Maria Majid\Desktop\gitsw2mirettezfta\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 C:\Users\Maria Majid\Desktop\gitsw2mirettezfta\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Maria Majid\Desktop\gitsw2mirettezfta\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Maria Majid\Desktop\gitsw2mirettezfta\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\ApplicationUsers\Index.cshtml.g.cs
+C:\Users\Maria Majid\Desktop\gitsw2mirettezfta\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\AdminUsers\Index.cshtml.g.cs
+C:\Users\Maria Majid\Desktop\gitsw2mirettezfta\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\AdminUsers\Edit.cshtml.g.cs
