@@ -1,151 +1,168 @@
 ﻿@model GraniteHouse_sw2.Models.ViewModel.AppointmentViewModel
 
 
-    <form method="get">
-        <br />
-        <br />
+<form method="get">
+    <br />
+    <br />
 
-        <h2 class="text-info">Appointment List</h2>
+    <h2 class="text-info">Appointment List</h2>
 
-        <br />
+    <br />
 
-        <div style="height:150px; background-color:aliceblue" class="container">
-            @* we will add search criteri *@
+    <div style="height:150px; background-color:aliceblue" class="container">
+        @* we will add search criteri *@
 
 
-            <div class="col-12">
-                <div class="row" style="padding-top:10px;">
-                    <div class="col-2">
-                        Customer Name
-                    </div>
-                    <div class="col-3">
-                        @Html.Editor("searchName", new { htmlAttributes = new { @class = "form-control" } })
-                    </div>
-                    <div class="col-2">
-
-                    </div>
-                    <div class="col-2">
-                        Email
-                    </div>
-                    <div class="col-3">
-                        @Html.Editor("searchEmail", new { htmlAttributes = new { @class = "form-control" } })
-                    </div>
+        <div class="col-12">
+            <div class="row" style="padding-top:10px;">
+                <div class="col-2">
+                    Customer Name
                 </div>
-                @* </div>
-        <div class="col-12">*@
-                <div class="row" style="padding-top:10px;">
-                    <div class="col-2">
-                        Phone Number
-                    </div>
-                    <div class="col-3">
-                        @Html.Editor("searchPhone", new { htmlAttributes = new { @class = "form-control" } })
-                    </div>
-                    <div class="col-2">
-
-                    </div>
-                    <div class="col-2">
-                        Appointment Date
-                    </div>
-                    <div class="col-3">
-                        @Html.Editor("searchDate", new { htmlAttributes = new { @class = "form-control", @id = "datepicker" } })
-                    </div>
+                <div class="col-3">
+                    @Html.Editor("searchName", new { htmlAttributes = new { @class = "form-control" } })
                 </div>
+                <div class="col-2">
 
-                <div class="row" style="padding-top:10px;">
-                    <div class="col-2">
-
-                    </div>
-                    <div class="col-3">
-
-                    </div>
-                    <div class="col-2">
-
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                    <div class="col-3">
-                        <button type="submit" name="submit" value="Search" class="btn btn-primary form-control">
-                            <li class="fas fa-search"></li>Search
-                        </button>
-                    </div>
                 </div>
+                <div class="col-2">
+                    Email
+                </div>
+                <div class="col-3">
+                    @Html.Editor("searchEmail", new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+            </div>
+            @* </div>
+                <div class="col-12">*@
+            <div class="row" style="padding-top:10px;">
+                <div class="col-2">
+                    Phone Number
+                </div>
+                <div class="col-3">
+                    @Html.Editor("searchPhone", new { htmlAttributes = new { @class = "form-control" } })
+                </div>
+                <div class="col-2">
 
+                </div>
+                <div class="col-2">
+                    Appointment Date
+                </div>
+                <div class="col-3">
+                    @Html.Editor("searchDate", new { htmlAttributes = new { @class = "form-control", @id = "datepicker" } })
+                </div>
+            </div>
+
+            <div class="row" style="padding-top:10px;">
+                <div class="col-2">
+
+                </div>
+                <div class="col-3">
+
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col-3">
+                    <button type="submit" name="submit" value="Search" class="btn btn-primary form-control">
+                        <li class="fas fa-search"></li>Search
+                    </button>
+                </div>
             </div>
 
         </div>
 
-            <div>
-                <table class="table table-striped border">
+    </div>
 
-                    <tr class="table-info">
-                        <th>
-                            @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().SalesPerson.Name)
+    <div>
+        <table class="table table-striped border">
 
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().AppointmentDate)
+            <tr class="table-info">
+                <th>
+                    @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().SalesPerson.Name)
 
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().CustomerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().AppointmentDate)
 
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().CustomerPhoneNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().CustomerName)
 
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().CustomerEmail)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().CustomerPhoneNumber)
 
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().isConfirmed)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().CustomerEmail)
 
-                        </th>
-                        <th>
-                        </th>
-                        <th>
-                        </th>
-                        <th>
-                        </th>
-                    </tr>
-                    @foreach (var item in Model.Appointments)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(m => item.SalesPerson.Name)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(m => item.AppointmentDate)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(m => item.CustomerName)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(m => item.CustomerPhoneNumber)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(m => item.CustomerEmail)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(m => item.isConfirmed)
-                            </td>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(m => m.Appointments.FirstOrDefault().isConfirmed)
 
-                            <td>
-                                <partial name="_TableButtonPartial" model="item.Id" />
-                            </td>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+            </tr>
+            @foreach (var item in Model.Appointments)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(m => item.SalesPerson.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.AppointmentDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.CustomerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.CustomerPhoneNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.CustomerEmail)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(m => item.isConfirmed)
+                    </td>
 
-                        </tr>
-                    }
-                </table>
+                    <td>
+                        <partial name="_TableButtonPartial" model="item.Id" />
+                    </td>
 
-            </div>
+                </tr>
+            }
+        </table>
 
-
-
-
-
-
+    </div>
 
 </form>
+
+
+@section Scripts{
+    <script>
+        $('.timepicker').timepicker({
+    timeFormat: 'h:mm p',
+    interval: 30,
+    minTime: '10',
+    maxTime: '3:00pm',
+    startTime: '10:00',
+    dynamic: true,
+    dropdown: true,
+    scrollbar: true
+});
+
+        $(function () {
+            $("#datepicker").datepicker({
+                minDate: +1, maxDate: "_3M"
+            });
+        });
+    </script>
+
+}

@@ -101,7 +101,7 @@ WriteAttributeValue("", 522, product.Image, 522, 14, false);
             WriteLiteral("</b>/sq.ft</label>\r\n\r\n                        </div>\r\n                        ");
             EndContext();
             BeginContext(923, 143, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "15436195aadb45adb99b41d5e91c97a7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a4903c0aeb6b47e3a321a9fa347bb1b4", async() => {
                 BeginContext(1049, 13, true);
                 WriteLiteral("View Details ");
                 EndContext();
