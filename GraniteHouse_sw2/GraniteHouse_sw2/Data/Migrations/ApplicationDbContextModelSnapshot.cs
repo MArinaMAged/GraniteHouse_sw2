@@ -33,9 +33,13 @@ namespace GraniteHouse_sw2.Data.Migrations
 
                     b.Property<string>("CustomerPhoneNumber");
 
+                    b.Property<string>("SalesPersonId");
+
                     b.Property<bool>("isConfirmed");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("SalesPersonId");
 
                     b.ToTable("Appointments");
                 });
@@ -239,11 +243,9 @@ namespace GraniteHouse_sw2.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.Property<string>("LoginProvider")
-                        .HasMaxLength(128);
+                    b.Property<string>("LoginProvider");
 
-                    b.Property<string>("ProviderKey")
-                        .HasMaxLength(128);
+                    b.Property<string>("ProviderKey");
 
                     b.Property<string>("ProviderDisplayName");
 
@@ -274,11 +276,9 @@ namespace GraniteHouse_sw2.Data.Migrations
                 {
                     b.Property<string>("UserId");
 
-                    b.Property<string>("LoginProvider")
-                        .HasMaxLength(128);
+                    b.Property<string>("LoginProvider");
 
-                    b.Property<string>("Name")
-                        .HasMaxLength(128);
+                    b.Property<string>("Name");
 
                     b.Property<string>("Value");
 
@@ -296,6 +296,13 @@ namespace GraniteHouse_sw2.Data.Migrations
                     b.ToTable("ApplicationUser");
 
                     b.HasDiscriminator().HasValue("ApplicationUser");
+                });
+
+            modelBuilder.Entity("GraniteHouse_sw2.Models.Appointments", b =>
+                {
+                    b.HasOne("GraniteHouse_sw2.Models.ApplicationUser", "SalesPerson")
+                        .WithMany()
+                        .HasForeignKey("SalesPersonId");
                 });
 
             modelBuilder.Entity("GraniteHouse_sw2.Models.Products", b =>
