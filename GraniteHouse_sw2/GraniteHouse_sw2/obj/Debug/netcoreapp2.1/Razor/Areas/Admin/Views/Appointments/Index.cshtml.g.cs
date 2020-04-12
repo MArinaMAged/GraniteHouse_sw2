@@ -57,7 +57,7 @@ using GraniteHouse_sw2.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(67, 4453, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "17fd2056d73749a490775e64d4d20cd5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "324c508efde34cac9310e512863376c6", async() => {
                 BeginContext(86, 171, true);
                 WriteLiteral("\r\n    <br />\r\n    <br />\r\n\r\n    <h2 class=\"text-info\">Appointment List</h2>\r\n\r\n    <br />\r\n\r\n    <div style=\"height:150px; background-color:aliceblue\" class=\"container\">\r\n");
                 EndContext();
@@ -270,7 +270,7 @@ using GraniteHouse_sw2.Models;
                 WriteLiteral("\r\n                    </td>\r\n\r\n                    <td>\r\n                        ");
                 EndContext();
                 BeginContext(4356, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a3d0aece06fd429b8c09f2a1d80acc58", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "99deef8f6650421e9d04c3fdb2b9e239", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
