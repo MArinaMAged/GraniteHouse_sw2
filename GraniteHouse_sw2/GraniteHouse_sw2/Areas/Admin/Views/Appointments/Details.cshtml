@@ -114,37 +114,37 @@
 
 
         
-        @* $(document).ready(function () {
+          $(document).ready(function () {
             var appointmentTime = document.getElementById('datepicker').value;
-            console.log(appointmentTime);
-            var date = appointmentTime.substring(0, 14);
-            var time = appointmentTime.substring(14, appointmentTime.length - 3);
+           // console.log(appointmentTime);
+            var date = appointmentTime.substring(0, 10);
+            var time = appointmentTime.substring(10, appointmentTime.length - 3);
             $('#datepicker').attr('value', date);
             $('#timepicker').attr('value', time);
         });
     
-       *@
-           
+       
+          @*
            
            $(document).ready(function () {
             var appointmentTime = document.getElementById('datepicker').value;
             
 
-            var splitData = "";
-            if (appointmentTime.indexOf("") > 0) {
-                splitData = appointmentTime.split("");    
+            var splitData = " ";
+            if (appointmentTime.indexOf(" ") > 0) {
+                splitData = appointmentTime.split(" ");    
             }
             else {
                 splitData = appointmentTime.split("T");   
             }
 
             var time = splitData[1].substring(0, 5);
-            if (time.slice(-1) == ":") {
+            if (time.slice(-1) == " ") {
                 time = time.substring(0, time.length - 1);
             }
                 var amPmTime = splitData[2];
                 $('#datapicker').attr('value', splitData[0]);
                 $('#timepicker').attr('value', time + ' ' + amPmTime);
-        })
+        })*@
     </script>
 }
