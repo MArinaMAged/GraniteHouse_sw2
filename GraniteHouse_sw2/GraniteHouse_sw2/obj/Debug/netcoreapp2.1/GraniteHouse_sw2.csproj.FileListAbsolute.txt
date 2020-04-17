@@ -865,3 +865,4 @@ C:\Users\Maria Majid\Desktop\magdiGitHub\GraniteHouse_sw2\GraniteHouse_sw2\Grani
 C:\Users\Maria Majid\Desktop\magdiGitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.dll
 C:\Users\Maria Majid\Desktop\magdiGitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.pdb
 C:\Users\Maria Majid\Desktop\magdiGitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.csproj.CopyComplete
+C:\Users\Maria Majid\Desktop\magdiGitHub\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\Razor\Areas\Admin\Views\Appointments\Details.cshtml.g.cs
