@@ -17,5 +17,9 @@ namespace GraniteHouse_sw2.Models
 
         //This will be used to build URL 
         public string urlParam { get; set; }
+
+      
+
+        
     }
 }
