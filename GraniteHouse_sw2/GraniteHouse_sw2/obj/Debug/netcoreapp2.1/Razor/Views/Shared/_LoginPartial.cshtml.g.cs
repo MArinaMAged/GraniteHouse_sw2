@@ -81,12 +81,12 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("    ");
             EndContext();
             BeginContext(185, 646, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e6abd5be61b40539e2759dd6764d219", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca7338caab7e4a38839e65dc1086c7c2", async() => {
                 BeginContext(359, 131, true);
                 WriteLiteral("\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <li class=\"nav-item\" style=\"padding-right:20px;\">\r\n                ");
                 EndContext();
                 BeginContext(490, 132, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43ed252bc0d44492982ace640ae9d0f7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08bcdf7dec0b48ddbf639c3454b2d216", async() => {
                     BeginContext(579, 39, false);
 #line 11 "C:\Users\Maria Majid\Desktop\SW2-GitHub\MarinaNoga-github\2\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\Views\Shared\_LoginPartial.cshtml"
                                                                                                    Write(await Component.InvokeAsync("UserName"));
@@ -164,7 +164,7 @@ else
             WriteLiteral("    <ul class=\"nav navbar-nav navbar-collapse justify-content-end\">\r\n        \r\n        <li class=\"nav-item\">");
             EndContext();
             BeginContext(953, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b358aff61c604b52a228daf01d09beea", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eff1f04c45564ab2861796b642f6d60c", async() => {
                 BeginContext(1019, 5, true);
                 WriteLiteral("Login");
                 EndContext();
