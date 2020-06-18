@@ -12,6 +12,9 @@ namespace GraniteHouse_sw2.Utility
 
         public const string AdminEndUser = "Admin";
         public const string SuperAdminEndUser = "Super Admin";
-    
+
+        //---->Register
+        public const string User = "User";
+
     }
 }

@@ -1,10 +1,16 @@
-﻿@page
+﻿
+
+@page
+
 @model RegisterModel
+
 @{
     ViewData["Title"] = "Register";
 }
 
 <h2>@ViewData["Title"]</h2>
+
+
 
 <div class="row">
     <div class="col-md-4">
@@ -36,11 +42,24 @@
                 <input asp-for="Input.Password" class="form-control" />
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Input.IsSuperAdmin"></label>
-                <input asp-for="Input.IsSuperAdmin" type="checkbox" class="form-control" />
-                
-            </div>
+
+
+            @if (User.IsInRole(@Utility.SD.SuperAdminEndUser) || User.IsInRole(@Utility.SD.AdminEndUser))
+            {
+
+
+                <div class="form-group">
+                    <label asp-for="Input.IsAdminEndUser"></label>
+                    <input asp-for="Input.IsAdminEndUser" type="checkbox" class="form-control" />
+
+                </div>
+
+            }
+
+
+
+
+
             <div class="form-group">
                 <label asp-for="Input.ConfirmPassword"></label>
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
