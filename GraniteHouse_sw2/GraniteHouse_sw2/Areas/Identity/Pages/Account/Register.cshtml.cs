@@ -174,8 +174,8 @@ namespace GraniteHouse_sw2.Areas.Identity.Pages.Account
             {
                 var user = new ApplicationUser
                 {
-                    Email = "Admin@Gmail.com",
-                    UserName = "Admin",
+                    Email = "SuperAdmin@Gmail.com",
+                    UserName = "SuperAdmin",
                     EmailConfirmed = true
                 };
 

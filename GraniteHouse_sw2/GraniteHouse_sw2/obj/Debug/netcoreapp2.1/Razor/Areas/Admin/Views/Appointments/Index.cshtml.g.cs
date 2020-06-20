@@ -63,7 +63,7 @@ using GraniteHouse_sw2.Models;
             WriteLiteral("\r\n\r\n    ");
             EndContext();
             BeginContext(71, 5470, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "72d770197d054c41944d7082f2abd69e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c6b5f32bb0b4dca87e2058e8f204630", async() => {
                 BeginContext(90, 191, true);
                 WriteLiteral("\r\n        <br />\r\n        <br />\r\n\r\n        <h2 class=\"text-info\">Appointment List</h2>\r\n\r\n        <br />\r\n\r\n        <div style=\"height:150px; background-color:aliceblue\" class=\"container\">\r\n");
                 EndContext();
@@ -302,7 +302,7 @@ using GraniteHouse_sw2.Models;
                 WriteLiteral("\r\n                        </td>\r\n\r\n                        <td>\r\n                            ");
                 EndContext();
                 BeginContext(4792, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b38c0ea21d514c6fb8857e17087724bd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "386971638a79409ea2fe4a6fc1546889", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -338,7 +338,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.Model = item.Id;
                 WriteLiteral("\r\n        ");
                 EndContext();
                 BeginContext(5250, 278, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2901c6c7eb1449b834d057c4ddc748f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("div", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "79d476e06c464da3bae2e43f27683148", async() => {
                 }
                 );
                 __GraniteHouse_sw2_TagHelpers_PageLinkTagHelper = CreateTagHelper<global::GraniteHouse_sw2.TagHelpers.PageLinkTagHelper>();

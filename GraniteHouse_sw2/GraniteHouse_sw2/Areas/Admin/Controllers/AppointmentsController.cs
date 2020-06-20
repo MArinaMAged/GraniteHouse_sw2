@@ -14,7 +14,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GraniteHouse_sw2.Areas.Admin.Controllers
 {
-    [Authorize(Roles = SD.SuperAdminEndUser + "," + SD.SuperAdminEndUser)]
+    [Authorize(Roles = SD.AdminEndUser + "," + SD.SuperAdminEndUser)]
     [Area("Admin")]
     public class AppointmentsController : Controller
     {

@@ -1176,3 +1176,5 @@ C:\Users\Maria Majid\Desktop\finalsw2\GraniteHouse_sw2\GraniteHouse_sw2\GraniteH
 C:\Users\Maria Majid\Desktop\finalsw2\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.dll
 C:\Users\Maria Majid\Desktop\finalsw2\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.pdb
 C:\Users\Maria Majid\Desktop\finalsw2\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.csproj.CopyComplete
+C:\Users\Maria Majid\Desktop\finalsw2\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.csproj.CoreCompileInputs.cache
+C:\Users\Maria Majid\Desktop\finalsw2\GraniteHouse_sw2\GraniteHouse_sw2\GraniteHouse_sw2\obj\Debug\netcoreapp2.1\GraniteHouse_sw2.genruntimeconfig.cache
